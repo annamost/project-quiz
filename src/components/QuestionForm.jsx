@@ -7,6 +7,8 @@ export const QuestionForm = ({
   data,
   points,
   setPoints,
+  section,
+  setSection,
 }) => {
   const normalQ = qType == 1;
   const [answer, setAnswer] = useState();
@@ -56,6 +58,7 @@ export const QuestionForm = ({
               setPoints(points - 1);
             }
           }
+          setSection(section + 1);
         }}
       >
         Next

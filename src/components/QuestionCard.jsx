@@ -2,7 +2,13 @@ import { QuestionTitle } from "./QuestionTitle";
 import { QuestionForm } from "./QuestionForm";
 import { useState } from "react";
 
-export const QuestionCard = ({ data, points, setPoints }) => {
+export const QuestionCard = ({
+  data,
+  points,
+  setPoints,
+  section,
+  setSection,
+}) => {
   const qTitle = data.questionTitle;
   const qChoices = data.questionsChoices;
   const qType = data.questionType;
@@ -18,8 +24,9 @@ export const QuestionCard = ({ data, points, setPoints }) => {
         data={data}
         points={points}
         setPoints={setPoints}
+        section={section}
+        setSection={setSection}
       ></QuestionForm>
-      <h1>My points = {points}</h1>
     </div>
   );
 };
