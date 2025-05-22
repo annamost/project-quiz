@@ -1,0 +1,23 @@
+{
+  "questions": [
+    {
+      "questionTitle": "Q1",
+      "questionsChoices": ["A", "B", "C", "D"],
+      "questionType": 1,
+      "solution": "A"
+    },
+    {
+      "questionTitle": "Q2",
+      "questionsChoices": ["A", "B", "C", "D"],
+      "questionType": 1,
+      "solution": "A"
+    },
+    {
+      "questionTitle": "Q3",
+      "questionsChoices": [1, 2, 3, 4],
+      "questionType": 2,
+      "solution": "1",
+      "fixedChoices": ["Hot", "Warn", "Tapid", "Cold"]
+    }
+  ]
+}
