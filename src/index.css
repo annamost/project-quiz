@@ -1,13 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --background: #fffbef;
+  --blue-forg: #6689e3;
+  --red-forg: #e76571;
+  --black-forg: #221f18;
+  --orange-forg: #fabe7f;
+  background-color: var(--background);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  /* width: 100%; */
+}
+
+h1 {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  text-shadow: 3px 3px var(--red-forg);
+  color: var(--background);
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  font-size: 20px;
+  color: var(--background);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px 10px 10px;
+}
+
+.header-section {
+  background-color: var(--blue-forg);
+  width: 80%;
+  margin: 10px 0 0 0;
+  /* padding: 0 10px; */
+  border-radius: 20px;
+  align-self: center;
+}
+
+.question-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 300px; */
+}
+
+.question-title {
+  position: relative;
+  top: -10px;
+  width: 60%;
+  border: 2px solid var(--red-forg);
+  border-radius: 20px;
+  padding: 5px;
+  background-color: var(--background);
+}
+
+.question-title h5 {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.question-form,
+.selection-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+  font-family: "Roboto", sans-serif;
+}
+.radio-quest,
+.selection-quest {
+  padding: 10px 0 10px 10px;
+  background-color: var(--orange-forg);
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.radio-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-form label {
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.radio-form input {
+  /* appearance: none; */
+  background-color: var(--background);
+  font: inherit;
+  color: var(--orange-forg);
+  width: 30px;
+  height: 30px;
+  border: 0.15em solid var(--orange-forg);
+  border-radius: 50%;
+  accent-color: var(--red-forg);
+}
+
+.next-button {
+  appearance: none;
+  background-color: var(--blue-forg);
+  color: var(--background);
+  border-color: var(--blue-forg);
+  border-radius: 20px;
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  box-shadow: 2px 2px var(--red-forg);
+}
+
+.selection-form select {
+  background-color: var(--background);
+  color: balck;
+  border: none;
+  border-radius: 40px;
+  font-family: "Roboto", sans-serif;
+  text-shadow: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.selection-form {
+  padding: 20px 10px;
 }

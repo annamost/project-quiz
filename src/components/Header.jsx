@@ -1,8 +1,8 @@
 export const Header = ({}) => {
   return (
-    <div>
+    <div className="header-section">
       <h1>Quizzz</h1>
-      <div>
+      <div className="avatar">
         <h2>Name</h2>
         <div>👻</div>
       </div>

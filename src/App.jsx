@@ -4,7 +4,7 @@ import data from "./data.json";
 
 export const App = () => {
   return (
-    <div>
+    <div className="main-content">
       <Header></Header>
       <Main data={data}></Main>
     </div>

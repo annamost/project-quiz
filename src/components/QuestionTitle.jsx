@@ -1,3 +1,7 @@
 export const QuestionTitle = ({ qTitle }) => {
-  return <h5>{qTitle}</h5>;
+  return (
+    <div className="question-title">
+      <h5>{qTitle}</h5>
+    </div>
+  );
 };

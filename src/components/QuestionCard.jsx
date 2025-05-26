@@ -15,7 +15,7 @@ export const QuestionCard = ({
   const qSolution = data.solution;
 
   return (
-    <div>
+    <div className="question-card">
       <QuestionTitle qTitle={qTitle}></QuestionTitle>
       <QuestionForm
         qChoices={qChoices}
