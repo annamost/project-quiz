@@ -8,6 +8,9 @@ export const QuestionCard = ({
   setPoints,
   section,
   setSection,
+  currProgress,
+  setCurrProgress,
+  progrSteps,
 }) => {
   const qTitle = data.questionTitle;
   const qChoices = data.questionsChoices;
@@ -26,6 +29,9 @@ export const QuestionCard = ({
         setPoints={setPoints}
         section={section}
         setSection={setSection}
+        currProgress={currProgress}
+        setCurrProgress={setCurrProgress}
+        progrSteps={progrSteps}
       ></QuestionForm>
     </div>
   );

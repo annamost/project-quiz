@@ -1,23 +1,52 @@
 {
   "questions": [
     {
-      "questionTitle": "Q1",
-      "questionsChoices": ["A", "B", "C", "D"],
+      "questionTitle": "Which gas planet is the largest planet in the Solar System?",
+      "questionsChoices": ["Jupiter", "Saturn", "Uranus", "Neptune"],
       "questionType": 1,
-      "solution": "A"
+      "solution": "Jupiter"
     },
     {
-      "questionTitle": "Q2",
-      "questionsChoices": ["A", "B", "C", "D"],
+      "questionTitle": "What are plants that lose their leaves in autumn called?",
+      "questionsChoices": [
+        "Coniferous",
+        "Deciduous",
+        "Carnivorous",
+        "Evergreen"
+      ],
       "questionType": 1,
-      "solution": "A"
+      "solution": "Deciduous"
     },
     {
-      "questionTitle": "Q3",
+      "questionTitle": "How many keys are there on a piano keyboard?",
       "questionsChoices": [1, 2, 3, 4],
       "questionType": 2,
-      "solution": "1",
-      "fixedChoices": ["Hot", "Warn", "Tapid", "Cold"]
+      "solution": "3",
+      "fixedChoices": ["80", "100", "88", "62"]
+    },
+    {
+      "questionTitle": "Which famous movie star starred in the classic films Roman Holiday, Breakfast at Tiffany's, Sabrina, and War and Peace?",
+      "questionsChoices": [
+        "Lauren Bacall",
+        "Audrey Hepburn",
+        "Sophia Loren",
+        "Vivien Leigh"
+      ],
+      "questionType": 1,
+      "solution": "Audrey Hepburn"
+    },
+    {
+      "questionTitle": "Which sport has a so-called Greco-Roman variation?",
+      "questionsChoices": [1, 2, 3, 4],
+      "questionType": 2,
+      "solution": "2",
+      "fixedChoices": [
+        "Athletics",
+        "Wrestling",
+        "Volleyball",
+        "Artistic gymnastics"
+      ]
     }
-  ]
+  ],
+  "avatars": ["👻", "💩", "💀", "😈", "👾"]
 }

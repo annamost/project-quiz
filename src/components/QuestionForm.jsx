@@ -9,6 +9,9 @@ export const QuestionForm = ({
   setPoints,
   section,
   setSection,
+  currProgress,
+  setCurrProgress,
+  progrSteps,
 }) => {
   const normalQ = qType == 1;
   const [answer, setAnswer] = useState();
@@ -40,7 +43,6 @@ export const QuestionForm = ({
               onChange={(event) => setAnswer(event.target.value)}
               value={answer}
             >
-              <option value={qChoices[0]}>Choose one...</option>
               <option value={qChoices[0]}>{data.fixedChoices[0]}</option>
               <option value={qChoices[1]}>{data.fixedChoices[1]}</option>
               <option value={qChoices[2]}>{data.fixedChoices[2]}</option>
@@ -61,10 +63,14 @@ export const QuestionForm = ({
           //   }
           // }
           setSection(section + 1);
+          console.log(currProgress);
+          console.log(progrSteps);
+          setCurrProgress(currProgress + progrSteps);
         }}
       >
         Next
       </button>
+      <progress className="progress-bar" value={currProgress}></progress>
     </div>
   );
 };
