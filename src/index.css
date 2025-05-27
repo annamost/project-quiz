@@ -286,6 +286,7 @@ progress[value]::-webkit-progress-value {
 }
 
 /* Now styling for other screen sizes */
+/* I have an isseu that the header always jumpps around and I don't know how to fix it... it might be because the size of the sections in the middle (start, question and submit) are not the same size or potentially the question section is*/
 @media (min-width: 668px) {
   .main-content {
     height: 100vh;

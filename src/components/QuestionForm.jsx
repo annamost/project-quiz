@@ -63,8 +63,6 @@ export const QuestionForm = ({
           //   }
           // }
           setSection(section + 1);
-          console.log(currProgress);
-          console.log(progrSteps);
           setCurrProgress(currProgress + progrSteps);
         }}
       >
