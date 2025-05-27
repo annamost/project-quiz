@@ -15,8 +15,10 @@ export const Main = ({ data, name, setName, avatar, setAvatar }) => {
   const displayResults = (points) => {
     if (points == 0) {
       setResultText(`Oh no, you have ${points} points 😥`);
-    } else {
-      setResultText(`Your point total is : ${points} 🥳`);
+    } else if (points > 3) {
+      setResultText(`Your point total is : ${points} out of 5 🥳`);
+    } else if (points <= 3) {
+      setResultText(`Your point total is : ${points} out of 5! 😸`);
     }
   };
 

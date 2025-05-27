@@ -22,7 +22,7 @@ h1 {
   text-transform: uppercase;
   text-shadow: 3px 3px var(--red-forg);
   color: var(--background);
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
   margin: 0;
 }
@@ -155,7 +155,7 @@ h2 {
   text-shadow: none;
   text-align: center;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .selection-form {
@@ -283,4 +283,75 @@ progress[value]::-webkit-progress-bar {
 progress[value]::-webkit-progress-value {
   border-radius: 40px;
   background-color: var(--red-forg);
+}
+
+/* Now styling for other screen sizes */
+@media (min-width: 668px) {
+  .main-content {
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin-top: 50px; */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .header-section {
+    grid-column: 3 / 11;
+    width: 100%;
+  }
+
+  .avatar {
+    min-height: 50px;
+  }
+
+  .avatar h2,
+  .avatar div {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  .start-screen {
+    grid-column: 5/9;
+    min-height: 320px;
+  }
+  .question-section {
+    grid-column: 4/10;
+    min-height: 300px;
+  }
+
+  .question-title {
+    width: 100%;
+  }
+
+  .question-form,
+  .selection-form {
+    width: 100%;
+  }
+
+  .selection-form select {
+    font-size: 20px;
+  }
+  .submit-card {
+    grid-column: 5/9;
+    width: 80%;
+    margin: 50px auto;
+    /* min-height: 270px; */
+    min-height: 300px;
+  }
+
+  .submit-card p {
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .footer-container {
+    grid-column: 6/8;
+    display: flex;
+    justify-content: center;
+  }
 }
